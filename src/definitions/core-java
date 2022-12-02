@@ -1,43 +1,60 @@
 Please answer the below core-java Questions:
 
 Q. What is programing language?
-A.
+A.programming language is a language that allows to make algorithms and computer programs. it is intended for
+the execution of these algorithms
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the jdk components ? define each component?
-A.
+A.JRE: is for running a java program (run time)
+contains class library and JVM
+JVM is for compilation (converting bytecode from java source to machine language) "compile time"
+
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is an IDE?
-A.
+A.IDE is software which helps programmers develop software code contain compiler linker debug GUI builder
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the IDEs available in the market to support java?
-A.
+A.IntelliJ IDEA
+  -Eclipse IDE
+  -Apache NetBeans
+  -Oracle JDeveloper
+  -BlueJ
+  -JCreator
+  -jGRASP
+  -Genuitec’s MyEclipse
+  -AWS Cloud9
+  -Geekflare
+  -Replit
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Explain the entire java life cycle.
-A.
-
+A.we have compile time and run time
+at compile time we have java source "the code of we have typing" (.java)
+compiled with jvm to transform into bytecode (.class)
+at run time bytecode compile into native code with JIT
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is class?
-A.
+A. Class is blueprint (template for objects) contain attributes
+attributes contain constructor,variables, methods(return , non return)
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is object?
-A.
+A.is an instance of the class
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the entry point of an application?
-A.
+A. is the place in source code where a program begins , in java is in psvm
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Why main method is static?
-A.
+A. in order that the compiler can call the main method without create an object
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Which class is the superclass of all classes in java?
-A.
+A.is the class where the subclass is inhereted
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is difference between path and classpath variables?

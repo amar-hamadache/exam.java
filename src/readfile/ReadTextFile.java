@@ -1,5 +1,12 @@
 package readfile;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
+
 public class ReadTextFile {
     /*
      *
@@ -17,9 +24,21 @@ public class ReadTextFile {
      *
      */
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        //write your code here
+        FileReader fr = null;
+        BufferedReader br = null;
+        fr = new FileReader("C:\\Users\\User1\\IdeaProjects\\java-coding-exam\\src\\readfile\\file-data");
+        br = new BufferedReader(fr);
+        String line = "";
+        do {
+             line = br.readLine();
+            System.out.println(line);
+        } while (line != null);
+        List<String> array = new LinkedList<>();
+        array.add(line);
+
+
 
     }
 

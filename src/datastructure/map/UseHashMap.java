@@ -23,7 +23,12 @@ public class UseHashMap {
         map.put(5, "San Jose");
         map.put(6, "Seattle");
 
-        //write your code here
+        System.out.println(map);
+        System.out.println(map.get(3));
+        for (Map.Entry entry:map.entrySet()) {
+            System.out.println("key:"+entry.getKey()+  "value" +entry.getValue());
+            
+        };
 
 
     }

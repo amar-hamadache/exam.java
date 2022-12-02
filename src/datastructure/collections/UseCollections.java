@@ -1,8 +1,6 @@
 package datastructure.collections;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class UseCollections {
 
@@ -21,8 +19,28 @@ public class UseCollections {
      */
 
     public static void main(String[] args) {
+        Set<Integer> array1 = new HashSet<>();
+          array1.add(1);
+        array1.add(3);
+        array1.add(2);
+        array1.add(4);
+        array1.add(8);
+        array1.add(9);
+        array1.add(0);
+        Set<Integer> array2 = new HashSet<>();
+        array2.add(1);
+        array2.add(3);
+        array2.add(7);
+        array2.add(5);
+        array2.add(4);
+        array2.add(0);
+        array2.add(7);
+        array2.add(5);
+        array1.addAll(array2);
+        System.out.println(array1);
+        array1.retainAll(array2);
+        System.out.println(array1);
 
-        //write your code here
 
     }
 
