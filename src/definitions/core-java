@@ -58,47 +58,51 @@ A.is the class where the subclass is inhereted
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is difference between path and classpath variables?
-A.
+A.path ; adress for find files executale
+classpath: used by jvm to find classpath
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between an Interface and Abstract class?
-A.
+A.interface can have multiple inheritance and only static and final variables
+abstract class can't have multiple inheritance and can have static,non static,final,non final variables
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Can you make an Object from an Interface and Abstract class ? how do you use interface and abstract class?
-A.
-
+A.no we can't
+interface can be implemented "implements"
+abstract class : can be extended "extends"
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Access Specifier?
-A.
+A.for visibility of the class (public private protected default)
+for  the class we use only public or default
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is OOP ? Define each feature of java OOP.
 A.
-
+abstraction , encapsulation, inheritance , polymorphism
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Java Package and which package is imported by default?
-A.
+A.is a group of class and interface and sub package
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is API? Name list of API that you have used so far.
-A.
+A.is a program allowing two applications to communicate with each other and exchange data
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Does java support multiple inheritance?
-A.
+A.no
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is method overloading and when it happens?
-A.
+A. more methods have the same name in one class
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Explain exceptions in java and how to handle it?
-A.
-
+A.when there are error when execute the program
+we have 2 mthods try catch and throws
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is static keyword in java? How it has been used in variables, methods and classes?
-A.
+A.non access modifier it's for memory management
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final and how it has been used variables, methods and classes?

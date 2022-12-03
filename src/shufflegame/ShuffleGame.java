@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ShuffleGame implements GameRoadMap{
 
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     int[] array = {1, 0 ,1};
 
@@ -31,8 +31,8 @@ public class ShuffleGame implements GameRoadMap{
      * @return playerGuess: userInput value
      */
     public int playerGuess() {
-        //implement here
-        return 0;
+        int userInput = sc.nextInt();
+        return (userInput);
     }
 
     /**
@@ -42,15 +42,62 @@ public class ShuffleGame implements GameRoadMap{
      * @param playerGuess: takes the chosen position user input
      */
     public void checkGuess(int[] shuffledArray, int playerGuess) {
-        //implement here
-    }
+        shuffledArray=shuffleGame(array);
+        if (String.valueOf(playerGuess).equals("1"));
+        {
+            if (shuffledArray[0] == 0) {
+                System.out.println("good guess");
+            } else
+                System.out.println("sorry wrong guess");
 
+        }
+         if (String.valueOf(playerGuess).equals("2")) {
+            if (shuffledArray[1] == 0) {
+                System.out.println("good guess");
+            } else System.out.println("sorry wrong guess");
+        }else if (String.valueOf(playerGuess).equals("3")) {
+                    if (shuffledArray[2] == 0) {
+                        System.out.println("good guess");
+                    } else System.out.println("sorry  wrong guess");
+
+                } else {
+                    System.out.println("invalid number");
+                    playAgain();
+                }
+
+        }
     /**
      * uses the previous functions in a good sequential way to run the game
      * uses the method recursion in order to loop in the game
      */
-    public void play() {
-        //implement here
+    public void playAgain(){
+        System.out.println("do you want to try again? yes/no");
+        String answer = sc.nextLine();
+        if (answer.equals("yes")){
+            System.out.println("pick 1, 2 or 3");
+            checkGuess(array, playerGuess());
+            playAgain();
+        } else if (answer.equals("no")) {
+            System.out.println("see you next time!");
+        }else {
+            playAgain();
+        }
     }
+
+public void play() {
+    System.out.println("----------------------------------welcome to shuffle game-------------------------------");
+    System.out.println("guess where the 0 is ?");
+    System.out.println("are you ready to play? yes/no");
+    String answer = sc.nextLine();
+    if (answer.equals("yes")) {
+        System.out.println("pick 1, 2 or 3");
+        checkGuess(array, playerGuess());
+    } else if (answer.equals("no")) {
+        System.out.println("see you next time");
+    } else {
+        System.out.println("are you ready to play? yes/no");
+        play();
+    }
+}
 
 }
